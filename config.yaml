@@ -1,0 +1,34 @@
+# Model IDs and list prices (USD per million tokens), from Anthropic's model table (checked 2026-10-16).
+tiers:
+  cheap:
+    model: claude-haiku-5-5
+    input_per_mtok: 0.10
+    output_per_mtok: 0.50
+    effort: low
+  mid:
+    model: claude-sonnet-5-5
+    input_per_mtok: 2.00
+    output_per_mtok: 10.00
+    effort: medium
+    fallbacks: true   # server-side refusal fallback (beta server-side-fallback-2026-07-01)
+  expert:
+    model: claude-opus-5-5
+    input_per_mtok: 4.00
+    output_per_mtok: 20.00
+    effort: high
+    fallbacks: true
+
+# Which tier answers the LLM-judge difficulty baseline in eval/.
+judge_tier: cheap
+max_output_tokens: 16000
+
+routing:
+  # Classifier probabilities -> tier. Biased upward: under-routing hurts quality more than over-routing hurts cost.
+  expert_threshold: 0.45   # P(hard) >= this -> expert
+  mid_threshold: 0.40      # P(medium) + P(hard) >= this -> mid
+
+budget:
+  monthly_usd: 50.0
+  alert_thresholds: [0.5, 0.8, 1.0]   # fraction of the monthly budget; each fires once per month
+  degrade_at: 0.9                     # at/after this fraction: expert requests are served by mid
+  cheap_only_at: 1.0                  # at/after this fraction: everything is served by cheap
