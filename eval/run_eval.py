@@ -1,7 +1,7 @@
 """Evaluate routing strategies on the labeled set, then replay a month of traffic against a budget.
 
     MOCK_MODE=1 python eval/run_eval.py          # no keys; deterministic
-    python eval/run_eval.py --limit 60           # live: real answers + LLM-judged quality (~$1-3)
+    python eval/run_eval.py --limit 60           # live: real answers + LLM-judged quality
 
 Writes results/eval_results.json, results/summary.md and docs/img/dashboard.png.
 """
