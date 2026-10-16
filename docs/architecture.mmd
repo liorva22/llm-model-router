@@ -1,0 +1,18 @@
+flowchart LR
+    client([Client app]) -->|POST /v1/chat| api[FastAPI gateway]
+    subgraph router[Router core]
+        est[Difficulty estimator<br/>TF-IDF + heuristics<br/>logistic regression]
+        pol[Routing policy<br/>P hard / P medium thresholds]
+        bud[Budget guard<br/>alerts 50/80/100%<br/>degrade at 90%, cheap-only at 100%]
+        est --> pol --> bud
+    end
+    api --> est
+    bud -->|cheap| haiku[(claude-haiku-5-5)]
+    bud -->|mid| sonnet[(claude-sonnet-5-5)]
+    bud -->|expert| opus[(claude-opus-5-5)]
+    haiku & sonnet & opus -.->|MOCK_MODE=1| mock[Deterministic mock LLM]
+    bud -->|tokens + cost| pg[(Postgres<br/>usage, budget_alerts)]
+    pg -->|month-to-date spend| bud
+    bud -->|threshold crossed| hook[Alert webhook / log]
+    data[(data/queries.jsonl<br/>200 labeled queries)] -->|train at startup| est
+    data --> evalr[eval/run_eval.py] --> dash[results/ + docs/img/dashboard.png]
