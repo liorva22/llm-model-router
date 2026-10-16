@@ -1,0 +1,29 @@
+name: CI
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: router
+          POSTGRES_PASSWORD: router
+          POSTGRES_DB: router
+        ports: ["5432:5432"]
+        options: --health-cmd "pg_isready -U router" --health-interval 2s --health-retries 30
+    env:
+      MOCK_MODE: "1"
+      DATABASE_URL: postgresql://router:router@localhost:5432/router
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev,eval]"
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: pytest -q
+      # The eval doubles as an integration test of the whole pipeline.
+      - run: python eval/run_eval.py --per-day 200

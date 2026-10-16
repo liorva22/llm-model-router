@@ -1,0 +1,7 @@
+.venv
+.git
+.env
+results
+docs
+tests
+eval
