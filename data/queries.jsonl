@@ -1,0 +1,200 @@
+{"query": "What is the capital of Australia?", "label": "easy"}
+{"query": "How many days are in a leap year?", "label": "easy"}
+{"query": "Convert 5 kilometers to miles.", "label": "easy"}
+{"query": "What does HTTP stand for?", "label": "easy"}
+{"query": "Who wrote Pride and Prejudice?", "label": "easy"}
+{"query": "What is the boiling point of water in Fahrenheit?", "label": "easy"}
+{"query": "Translate 'good morning' into Spanish.", "label": "easy"}
+{"query": "What is 15% of 80?", "label": "easy"}
+{"query": "Give me a synonym for 'happy'.", "label": "easy"}
+{"query": "What year did the Berlin Wall fall?", "label": "easy"}
+{"query": "What is the chemical symbol for gold?", "label": "easy"}
+{"query": "How do I make a bulleted list in Markdown?", "label": "easy"}
+{"query": "What time zone is Tokyo in?", "label": "easy"}
+{"query": "Spell 'necessary' correctly.", "label": "easy"}
+{"query": "What is the square root of 144?", "label": "easy"}
+{"query": "Name three primary colors.", "label": "easy"}
+{"query": "What is the largest planet in our solar system?", "label": "easy"}
+{"query": "How many ounces are in a pound?", "label": "easy"}
+{"query": "What's the plural of 'cactus'?", "label": "easy"}
+{"query": "Define the word 'ephemeral'.", "label": "easy"}
+{"query": "What does CPU stand for?", "label": "easy"}
+{"query": "Who painted the Mona Lisa?", "label": "easy"}
+{"query": "How do I check my Python version from the terminal?", "label": "easy"}
+{"query": "What is 12 times 12?", "label": "easy"}
+{"query": "What language is spoken in Brazil?", "label": "easy"}
+{"query": "Convert 30 degrees Celsius to Fahrenheit.", "label": "easy"}
+{"query": "What is the opposite of 'generous'?", "label": "easy"}
+{"query": "How many continents are there?", "label": "easy"}
+{"query": "What is the currency of Japan?", "label": "easy"}
+{"query": "Fix the typo: 'Thier car is red.'", "label": "easy"}
+{"query": "What does 'RSVP' mean on an invitation?", "label": "easy"}
+{"query": "What is the freezing point of water in Celsius?", "label": "easy"}
+{"query": "How do I undo the last commit in git without losing changes?", "label": "easy"}
+{"query": "What is the tallest mountain in the world?", "label": "easy"}
+{"query": "Give me a rhyme for 'cat'.", "label": "easy"}
+{"query": "What is the main ingredient in guacamole?", "label": "easy"}
+{"query": "How many sides does a hexagon have?", "label": "easy"}
+{"query": "What is the past tense of 'run'?", "label": "easy"}
+{"query": "What is an API, in one sentence?", "label": "easy"}
+{"query": "Who was the first person to walk on the moon?", "label": "easy"}
+{"query": "What is 7 squared?", "label": "easy"}
+{"query": "How do I list files in a directory on Linux?", "label": "easy"}
+{"query": "What is the capital of Canada?", "label": "easy"}
+{"query": "Round 3.14159 to two decimal places.", "label": "easy"}
+{"query": "What does JSON stand for?", "label": "easy"}
+{"query": "What is the speed of light, approximately?", "label": "easy"}
+{"query": "Name the days of the week in French.", "label": "easy"}
+{"query": "How many minutes are in three hours?", "label": "easy"}
+{"query": "What is the smallest prime number?", "label": "easy"}
+{"query": "Make this sentence more formal: 'Thanks a lot, see ya.'", "label": "easy"}
+{"query": "What's the difference between 'their' and 'there'?", "label": "easy"}
+{"query": "What is the largest ocean on Earth?", "label": "easy"}
+{"query": "How do I create a new folder in Windows?", "label": "easy"}
+{"query": "What is a haiku?", "label": "easy"}
+{"query": "Give me a short title for a blog post about morning routines.", "label": "easy"}
+{"query": "What is 1000 divided by 8?", "label": "easy"}
+{"query": "Which planet is known as the Red Planet?", "label": "easy"}
+{"query": "What does 'FYI' stand for?", "label": "easy"}
+{"query": "How many bytes are in a kilobyte?", "label": "easy"}
+{"query": "What is the capital of Italy?", "label": "easy"}
+{"query": "Write a one-line birthday greeting for a coworker.", "label": "easy"}
+{"query": "What is the main function of the heart?", "label": "easy"}
+{"query": "How do I bold text in HTML?", "label": "easy"}
+{"query": "What is the population of the world, roughly?", "label": "easy"}
+{"query": "Summarize in one sentence: 'The meeting is moved from Tuesday to Thursday at 3pm.'", "label": "easy"}
+{"query": "What is the past tense of 'swim'?", "label": "easy"}
+{"query": "What is the capital of Egypt?", "label": "easy"}
+{"query": "How many legs does a spider have?", "label": "easy"}
+{"query": "What is photosynthesis, in one sentence?", "label": "easy"}
+{"query": "Who invented the telephone?", "label": "easy"}
+{"query": "How do I install a package with pip?", "label": "easy"}
+{"query": "What is 25 plus 47?", "label": "easy"}
+{"query": "What is a noun?", "label": "easy"}
+{"query": "What is the default port for HTTPS?", "label": "easy"}
+{"query": "Is a tomato a fruit or a vegetable?", "label": "easy"}
+{"query": "What does 'ASAP' mean?", "label": "easy"}
+{"query": "How many hours are in a week?", "label": "easy"}
+{"query": "What color do you get by mixing blue and yellow?", "label": "easy"}
+{"query": "What's the file extension for a Python script?", "label": "easy"}
+{"query": "What is the longest river in Africa?", "label": "easy"}
+{"query": "Give me an emoji that represents celebration.", "label": "easy"}
+{"query": "What is the boiling point of water at sea level in Celsius?", "label": "easy"}
+{"query": "How do I reverse a string in Python?", "label": "easy"}
+{"query": "Who is the author of '1984'?", "label": "easy"}
+{"query": "What is the capital of Germany?", "label": "easy"}
+{"query": "Convert 2 hours 30 minutes into minutes.", "label": "easy"}
+{"query": "What does 'URL' stand for?", "label": "easy"}
+{"query": "What's a good name for a golden retriever puppy?", "label": "easy"}
+{"query": "How many players are on a soccer team on the field?", "label": "easy"}
+{"query": "Rewrite in passive voice: 'The dog chased the ball.'", "label": "easy"}
+{"query": "What's the abbreviation for 'for example'?", "label": "easy"}
+{"query": "What is the hottest planet in the solar system?", "label": "easy"}
+{"query": "How do I make text italic in Markdown?", "label": "easy"}
+{"query": "What is the capital of Spain?", "label": "easy"}
+{"query": "How many centimeters are in a meter?", "label": "easy"}
+{"query": "What is the primary gas in Earth's atmosphere?", "label": "easy"}
+{"query": "Name a famous composer from the Classical period.", "label": "easy"}
+{"query": "How do I comment out a line in JavaScript?", "label": "easy"}
+{"query": "What does SQL stand for?", "label": "easy"}
+{"query": "What is half of 250?", "label": "easy"}
+{"query": "What is the plural of 'mouse'?", "label": "easy"}
+{"query": "Which country has the largest population?", "label": "easy"}
+{"query": "Give me three words that describe the ocean.", "label": "easy"}
+{"query": "How do I exit vim?", "label": "easy"}
+{"query": "What is the freezing point of water in Fahrenheit?", "label": "easy"}
+{"query": "What is an acronym?", "label": "easy"}
+{"query": "What is the capital of South Korea?", "label": "easy"}
+{"query": "What does RAM stand for?", "label": "easy"}
+{"query": "How many weeks are in a year?", "label": "easy"}
+{"query": "What's the past tense of 'eat'?", "label": "easy"}
+{"query": "Who discovered penicillin?", "label": "easy"}
+{"query": "How do I get the length of a list in Python?", "label": "easy"}
+{"query": "What is the chemical formula for water?", "label": "easy"}
+{"query": "What is 9 times 8?", "label": "easy"}
+{"query": "What sound does a cow make?", "label": "easy"}
+{"query": "What is the capital of Kenya?", "label": "easy"}
+{"query": "List the four seasons.", "label": "easy"}
+{"query": "What is a synonym for 'big'?", "label": "easy"}
+{"query": "How do I clear the terminal screen?", "label": "easy"}
+{"query": "What is the square root of 81?", "label": "easy"}
+{"query": "How many sides does a triangle have?", "label": "easy"}
+{"query": "What is the capital of Argentina?", "label": "easy"}
+{"query": "Translate 'thank you' into German.", "label": "easy"}
+{"query": "What does 'e.g.' mean?", "label": "easy"}
+{"query": "What is the largest mammal?", "label": "easy"}
+{"query": "How do I refresh a webpage with a keyboard shortcut?", "label": "easy"}
+{"query": "What is 100 minus 37?", "label": "easy"}
+{"query": "What is the capital of Norway?", "label": "easy"}
+{"query": "Which organ do humans use to breathe?", "label": "easy"}
+{"query": "What's a palindrome? Give one example.", "label": "easy"}
+{"query": "How do I check disk space on Linux?", "label": "easy"}
+{"query": "What is the capital of Mexico?", "label": "easy"}
+{"query": "What is the plural of 'child'?", "label": "easy"}
+{"query": "Who painted 'The Starry Night'?", "label": "easy"}
+{"query": "How many grams are in a kilogram?", "label": "easy"}
+{"query": "What's the antonym of 'ancient'?", "label": "easy"}
+{"query": "What is the capital of Greece?", "label": "easy"}
+{"query": "Write a two-word slogan for a coffee shop.", "label": "easy"}
+{"query": "How do I convert a string to an integer in Python?", "label": "easy"}
+{"query": "What does 'PDF' stand for?", "label": "easy"}
+{"query": "What is the main language of Egypt?", "label": "easy"}
+{"query": "How many seconds are in a minute?", "label": "easy"}
+{"query": "What's the capital of Portugal?", "label": "easy"}
+{"query": "What is the shape of a stop sign?", "label": "easy"}
+{"query": "How do I lowercase a string in JavaScript?", "label": "easy"}
+{"query": "What is the symbol for the element oxygen?", "label": "easy"}
+{"query": "What is the capital of Sweden?", "label": "easy"}
+{"query": "How many zeros are in one million?", "label": "easy"}
+{"query": "What does 'DIY' stand for?", "label": "easy"}
+{"query": "How do I take a screenshot on a Mac?", "label": "easy"}
+{"query": "Explain the difference between a process and a thread, with an example of when you'd use each.", "label": "medium"}
+{"query": "Write a Python function that checks whether a string is a valid IPv4 address, with a few test cases.", "label": "medium"}
+{"query": "Compare REST and GraphQL for a mobile app backend. What are the main trade-offs?", "label": "medium"}
+{"query": "Explain how gradient descent works to someone who knows basic calculus.", "label": "medium"}
+{"query": "Write a SQL query to find the top 3 customers by total order value per country.", "label": "medium"}
+{"query": "Debug this: my React component re-renders infinitely when I call setState inside useEffect without a dependency array. Why, and how do I fix it?", "label": "medium"}
+{"query": "Summarize the pros and cons of microservices versus a monolith for a 10-person startup.", "label": "medium"}
+{"query": "Write a polite but firm email to a vendor who has missed two delivery deadlines, asking for a recovery plan.", "label": "medium"}
+{"query": "Explain what a database index is, and when adding one can make performance worse.", "label": "medium"}
+{"query": "Write a bash script that backs up a directory to a timestamped tar.gz and deletes backups older than 7 days.", "label": "medium"}
+{"query": "Explain the bias-variance trade-off and how regularization affects it.", "label": "medium"}
+{"query": "Refactor this nested if-else logic into a cleaner structure and explain why your version is better: if a: if b: x() else: y() else: if b: y() else: z()", "label": "medium"}
+{"query": "Explain how HTTPS establishes a secure connection, step by step.", "label": "medium"}
+{"query": "Write a cover letter paragraph for a junior data analyst role highlighting SQL and dashboard experience.", "label": "medium"}
+{"query": "What are the differences between L1 and L2 regularization, and when would you prefer each?", "label": "medium"}
+{"query": "Explain how a hash map handles collisions, and compare chaining with open addressing.", "label": "medium"}
+{"query": "Write a Python class implementing an LRU cache with get and put in O(1).", "label": "medium"}
+{"query": "Compare Postgres and MongoDB for an e-commerce product catalog, and recommend one.", "label": "medium"}
+{"query": "Explain precision, recall, and F1 score using a spam filter example.", "label": "medium"}
+{"query": "Create a 5-day study plan for learning the basics of Docker, with daily goals.", "label": "medium"}
+{"query": "Explain why my pandas groupby is slow on 10 million rows and suggest ways to speed it up.", "label": "medium"}
+{"query": "Write a regular expression that validates email addresses reasonably, and explain its limitations.", "label": "medium"}
+{"query": "Explain the CAP theorem with a practical example from a distributed database.", "label": "medium"}
+{"query": "Write unit tests in pytest for a function that parses dates in multiple formats.", "label": "medium"}
+{"query": "Explain the difference between supervised, unsupervised, and reinforcement learning, with one real-world example of each.", "label": "medium"}
+{"query": "Analyze the main risks of launching a product without a beta test, and suggest mitigations.", "label": "medium"}
+{"query": "Explain how React's virtual DOM works and why it improves performance.", "label": "medium"}
+{"query": "Write a JavaScript debounce function and explain when to use debounce versus throttle.", "label": "medium"}
+{"query": "Explain what an embedding is in NLP and how cosine similarity is used for semantic search.", "label": "medium"}
+{"query": "Draft a project status update for stakeholders: we're two weeks behind because of an API dependency, but the scope is unchanged.", "label": "medium"}
+{"query": "Explain how Git rebase differs from merge, and when each is appropriate on a team.", "label": "medium"}
+{"query": "Write a function that merges overlapping intervals and analyze its time complexity.", "label": "medium"}
+{"query": "Explain how OAuth 2.0 authorization code flow works for a web app.", "label": "medium"}
+{"query": "Compare k-means and DBSCAN clustering, and say when each fails.", "label": "medium"}
+{"query": "Explain why floating point arithmetic gives 0.1 + 0.2 != 0.3 and how to handle money calculations correctly.", "label": "medium"}
+{"query": "Prove that the halting problem is undecidable, and explain the diagonalization argument step by step.", "label": "hard"}
+{"query": "Design a globally distributed rate limiter for an API serving 1 million requests per second. Discuss consistency, latency, failure modes, and the data structures you would use.", "label": "hard"}
+{"query": "Derive the backpropagation equations for a two-layer neural network with softmax output and cross-entropy loss, and analyze the computational complexity.", "label": "hard"}
+{"query": "Architect a real-time fraud detection system for a payments company: feature pipelines, model serving, latency budgets, feedback loops, and how to handle concept drift.", "label": "hard"}
+{"query": "Prove that every comparison-based sorting algorithm requires Omega(n log n) comparisons in the worst case.", "label": "hard"}
+{"query": "Design a multi-tenant vector search service with strict tenant isolation, hybrid keyword and semantic retrieval, and p99 latency under 50ms at 100M documents. Justify every trade-off.", "label": "hard"}
+{"query": "Analyze the security of a homegrown authentication scheme that hashes passwords with a single SHA-256 round and a global salt. Describe concrete attacks, quantify the risk, and propose a migration plan that does not force all users to reset.", "label": "hard"}
+{"query": "Implement a lock-free concurrent queue in C++ and prove that it is linearizable, discussing the ABA problem and memory reclamation.", "label": "hard"}
+{"query": "Design the evaluation strategy for an LLM-based medical triage assistant: offline metrics, human review, safety red-teaming, statistical power for A/B tests, and rollback criteria.", "label": "hard"}
+{"query": "Given a graph with negative edge weights but no negative cycles, derive an algorithm faster than Bellman-Ford for all-pairs shortest paths and prove its correctness and complexity.", "label": "hard"}
+{"query": "Critique the methodology of a study claiming a new drug reduces mortality by 40% based on an observational dataset of 2,000 patients. Identify confounders, propose a causal inference approach, and explain what evidence would change your conclusion.", "label": "hard"}
+{"query": "Design a consensus protocol for a 5-node cluster that tolerates one Byzantine fault, compare it to Raft and PBFT, and analyze message complexity.", "label": "hard"}
+{"query": "Optimize a transformer inference service: analyze memory bandwidth versus compute bottlenecks, KV-cache strategies, batching, quantization trade-offs, and estimate throughput on a single GPU.", "label": "hard"}
+{"query": "Prove that the sum of the reciprocals of the primes diverges.", "label": "hard"}
+{"query": "Design a data migration from a 20TB sharded MySQL cluster to Postgres with zero downtime, covering dual writes, backfill, consistency verification, and rollback, and analyze the risks at each step.", "label": "hard"}
