@@ -1,0 +1,678 @@
+{
+  "mode": "mock",
+  "n_queries": 200,
+  "label_counts": {
+    "easy": 150,
+    "medium": 35,
+    "hard": 15
+  },
+  "strategies": {
+    "always_cheap": {
+      "mix": {
+        "cheap": 1.0,
+        "mid": 0.0,
+        "expert": 0.0
+      },
+      "tier_accuracy": 0.75,
+      "under_route_rate": 0.25,
+      "over_route_rate": 0.0,
+      "cost_usd": 0.0165344,
+      "cost_vs_expert": 0.025000000000000005
+    },
+    "always_expert": {
+      "mix": {
+        "cheap": 0.0,
+        "mid": 0.0,
+        "expert": 1.0
+      },
+      "tier_accuracy": 0.075,
+      "under_route_rate": 0.0,
+      "over_route_rate": 0.925,
+      "cost_usd": 0.661376,
+      "cost_vs_expert": 1.0
+    },
+    "heuristic": {
+      "mix": {
+        "cheap": 0.895,
+        "mid": 0.075,
+        "expert": 0.03
+      },
+      "tier_accuracy": 0.81,
+      "under_route_rate": 0.19,
+      "over_route_rate": 0.0,
+      "cost_usd": 0.0792744,
+      "cost_vs_expert": 0.11986283143023031
+    },
+    "classifier": {
+      "mix": {
+        "cheap": 0.75,
+        "mid": 0.185,
+        "expert": 0.065
+      },
+      "tier_accuracy": 0.965,
+      "under_route_rate": 0.02,
+      "over_route_rate": 0.015,
+      "cost_usd": 0.1494752,
+      "cost_vs_expert": 0.22600638668473003
+    }
+  },
+  "classifier_route_ms": {
+    "p50": 1.8666000105440617,
+    "p95": 4.325835005147382
+  },
+  "api_spend_usd": 0.0,
+  "budget_sim": {
+    "requests_per_day": 2000,
+    "budget_usd": 39.15,
+    "always_expert_month_usd": 198.15551999998783,
+    "unguarded_router_month_usd": 46.06093920000263,
+    "guarded_router_month_usd": 39.75242240000197,
+    "first_degraded_day": 23,
+    "days": {
+      "guarded": [
+        {
+          "day": 1,
+          "spent": 1.461617600000005,
+          "mix": {
+            "cheap": 1536,
+            "mid": 320,
+            "expert": 144
+          },
+          "degraded": 0
+        },
+        {
+          "day": 2,
+          "spent": 2.949635999999979,
+          "mix": {
+            "cheap": 1497,
+            "mid": 372,
+            "expert": 131
+          },
+          "degraded": 0
+        },
+        {
+          "day": 3,
+          "spent": 4.503343199999884,
+          "mix": {
+            "cheap": 1498,
+            "mid": 352,
+            "expert": 150
+          },
+          "degraded": 0
+        },
+        {
+          "day": 4,
+          "spent": 6.059459199999733,
+          "mix": {
+            "cheap": 1497,
+            "mid": 352,
+            "expert": 151
+          },
+          "degraded": 0
+        },
+        {
+          "day": 5,
+          "spent": 7.563946399999601,
+          "mix": {
+            "cheap": 1513,
+            "mid": 348,
+            "expert": 139
+          },
+          "degraded": 0
+        },
+        {
+          "day": 6,
+          "spent": 8.972285599999648,
+          "mix": {
+            "cheap": 1550,
+            "mid": 319,
+            "expert": 131
+          },
+          "degraded": 0
+        },
+        {
+          "day": 7,
+          "spent": 10.518139999999846,
+          "mix": {
+            "cheap": 1514,
+            "mid": 334,
+            "expert": 152
+          },
+          "degraded": 0
+        },
+        {
+          "day": 8,
+          "spent": 12.180572799999958,
+          "mix": {
+            "cheap": 1475,
+            "mid": 357,
+            "expert": 168
+          },
+          "degraded": 0
+        },
+        {
+          "day": 9,
+          "spent": 13.620321600000109,
+          "mix": {
+            "cheap": 1532,
+            "mid": 338,
+            "expert": 130
+          },
+          "degraded": 0
+        },
+        {
+          "day": 10,
+          "spent": 15.145777600000287,
+          "mix": {
+            "cheap": 1504,
+            "mid": 352,
+            "expert": 144
+          },
+          "degraded": 0
+        },
+        {
+          "day": 11,
+          "spent": 16.618546400000437,
+          "mix": {
+            "cheap": 1517,
+            "mid": 346,
+            "expert": 137
+          },
+          "degraded": 0
+        },
+        {
+          "day": 12,
+          "spent": 18.180476000000617,
+          "mix": {
+            "cheap": 1508,
+            "mid": 336,
+            "expert": 156
+          },
+          "degraded": 0
+        },
+        {
+          "day": 13,
+          "spent": 19.780286400000737,
+          "mix": {
+            "cheap": 1499,
+            "mid": 337,
+            "expert": 164
+          },
+          "degraded": 0
+        },
+        {
+          "day": 14,
+          "spent": 21.29465440000088,
+          "mix": {
+            "cheap": 1490,
+            "mid": 374,
+            "expert": 136
+          },
+          "degraded": 0
+        },
+        {
+          "day": 15,
+          "spent": 22.900908800000963,
+          "mix": {
+            "cheap": 1482,
+            "mid": 366,
+            "expert": 152
+          },
+          "degraded": 0
+        },
+        {
+          "day": 16,
+          "spent": 24.507496800001014,
+          "mix": {
+            "cheap": 1495,
+            "mid": 341,
+            "expert": 164
+          },
+          "degraded": 0
+        },
+        {
+          "day": 17,
+          "spent": 26.107472000001113,
+          "mix": {
+            "cheap": 1485,
+            "mid": 354,
+            "expert": 161
+          },
+          "degraded": 0
+        },
+        {
+          "day": 18,
+          "spent": 27.68252000000125,
+          "mix": {
+            "cheap": 1488,
+            "mid": 366,
+            "expert": 146
+          },
+          "degraded": 0
+        },
+        {
+          "day": 19,
+          "spent": 29.233789600001288,
+          "mix": {
+            "cheap": 1501,
+            "mid": 351,
+            "expert": 148
+          },
+          "degraded": 0
+        },
+        {
+          "day": 20,
+          "spent": 30.7110368000015,
+          "mix": {
+            "cheap": 1511,
+            "mid": 352,
+            "expert": 137
+          },
+          "degraded": 0
+        },
+        {
+          "day": 21,
+          "spent": 32.24913200000159,
+          "mix": {
+            "cheap": 1507,
+            "mid": 345,
+            "expert": 148
+          },
+          "degraded": 0
+        },
+        {
+          "day": 22,
+          "spent": 33.77987440000168,
+          "mix": {
+            "cheap": 1506,
+            "mid": 347,
+            "expert": 147
+          },
+          "degraded": 0
+        },
+        {
+          "day": 23,
+          "spent": 35.313391200001746,
+          "mix": {
+            "cheap": 1496,
+            "mid": 363,
+            "expert": 141
+          },
+          "degraded": 7
+        },
+        {
+          "day": 24,
+          "spent": 36.436955200001854,
+          "mix": {
+            "cheap": 1521,
+            "mid": 479,
+            "expert": 0
+          },
+          "degraded": 133
+        },
+        {
+          "day": 25,
+          "spent": 37.6162176000018,
+          "mix": {
+            "cheap": 1494,
+            "mid": 506,
+            "expert": 0
+          },
+          "degraded": 151
+        },
+        {
+          "day": 26,
+          "spent": 38.75072000000173,
+          "mix": {
+            "cheap": 1518,
+            "mid": 482,
+            "expert": 0
+          },
+          "degraded": 154
+        },
+        {
+          "day": 27,
+          "spent": 39.25663520000163,
+          "mix": {
+            "cheap": 1832,
+            "mid": 168,
+            "expert": 0
+          },
+          "degraded": 397
+        },
+        {
+          "day": 28,
+          "spent": 39.42310400000164,
+          "mix": {
+            "cheap": 2000,
+            "mid": 0,
+            "expert": 0
+          },
+          "degraded": 525
+        },
+        {
+          "day": 29,
+          "spent": 39.58808320000176,
+          "mix": {
+            "cheap": 2000,
+            "mid": 0,
+            "expert": 0
+          },
+          "degraded": 489
+        },
+        {
+          "day": 30,
+          "spent": 39.75242240000197,
+          "mix": {
+            "cheap": 2000,
+            "mid": 0,
+            "expert": 0
+          },
+          "degraded": 496
+        }
+      ],
+      "unguarded": [
+        {
+          "day": 1,
+          "spent": 1.461617600000005,
+          "mix": {
+            "cheap": 1536,
+            "mid": 320,
+            "expert": 144
+          },
+          "degraded": 0
+        },
+        {
+          "day": 2,
+          "spent": 2.949635999999979,
+          "mix": {
+            "cheap": 1497,
+            "mid": 372,
+            "expert": 131
+          },
+          "degraded": 0
+        },
+        {
+          "day": 3,
+          "spent": 4.503343199999884,
+          "mix": {
+            "cheap": 1498,
+            "mid": 352,
+            "expert": 150
+          },
+          "degraded": 0
+        },
+        {
+          "day": 4,
+          "spent": 6.059459199999733,
+          "mix": {
+            "cheap": 1497,
+            "mid": 352,
+            "expert": 151
+          },
+          "degraded": 0
+        },
+        {
+          "day": 5,
+          "spent": 7.563946399999601,
+          "mix": {
+            "cheap": 1513,
+            "mid": 348,
+            "expert": 139
+          },
+          "degraded": 0
+        },
+        {
+          "day": 6,
+          "spent": 8.972285599999648,
+          "mix": {
+            "cheap": 1550,
+            "mid": 319,
+            "expert": 131
+          },
+          "degraded": 0
+        },
+        {
+          "day": 7,
+          "spent": 10.518139999999846,
+          "mix": {
+            "cheap": 1514,
+            "mid": 334,
+            "expert": 152
+          },
+          "degraded": 0
+        },
+        {
+          "day": 8,
+          "spent": 12.180572799999958,
+          "mix": {
+            "cheap": 1475,
+            "mid": 357,
+            "expert": 168
+          },
+          "degraded": 0
+        },
+        {
+          "day": 9,
+          "spent": 13.620321600000109,
+          "mix": {
+            "cheap": 1532,
+            "mid": 338,
+            "expert": 130
+          },
+          "degraded": 0
+        },
+        {
+          "day": 10,
+          "spent": 15.145777600000287,
+          "mix": {
+            "cheap": 1504,
+            "mid": 352,
+            "expert": 144
+          },
+          "degraded": 0
+        },
+        {
+          "day": 11,
+          "spent": 16.618546400000437,
+          "mix": {
+            "cheap": 1517,
+            "mid": 346,
+            "expert": 137
+          },
+          "degraded": 0
+        },
+        {
+          "day": 12,
+          "spent": 18.180476000000617,
+          "mix": {
+            "cheap": 1508,
+            "mid": 336,
+            "expert": 156
+          },
+          "degraded": 0
+        },
+        {
+          "day": 13,
+          "spent": 19.780286400000737,
+          "mix": {
+            "cheap": 1499,
+            "mid": 337,
+            "expert": 164
+          },
+          "degraded": 0
+        },
+        {
+          "day": 14,
+          "spent": 21.29465440000088,
+          "mix": {
+            "cheap": 1490,
+            "mid": 374,
+            "expert": 136
+          },
+          "degraded": 0
+        },
+        {
+          "day": 15,
+          "spent": 22.900908800000963,
+          "mix": {
+            "cheap": 1482,
+            "mid": 366,
+            "expert": 152
+          },
+          "degraded": 0
+        },
+        {
+          "day": 16,
+          "spent": 24.507496800001014,
+          "mix": {
+            "cheap": 1495,
+            "mid": 341,
+            "expert": 164
+          },
+          "degraded": 0
+        },
+        {
+          "day": 17,
+          "spent": 26.107472000001113,
+          "mix": {
+            "cheap": 1485,
+            "mid": 354,
+            "expert": 161
+          },
+          "degraded": 0
+        },
+        {
+          "day": 18,
+          "spent": 27.68252000000125,
+          "mix": {
+            "cheap": 1488,
+            "mid": 366,
+            "expert": 146
+          },
+          "degraded": 0
+        },
+        {
+          "day": 19,
+          "spent": 29.233789600001288,
+          "mix": {
+            "cheap": 1501,
+            "mid": 351,
+            "expert": 148
+          },
+          "degraded": 0
+        },
+        {
+          "day": 20,
+          "spent": 30.7110368000015,
+          "mix": {
+            "cheap": 1511,
+            "mid": 352,
+            "expert": 137
+          },
+          "degraded": 0
+        },
+        {
+          "day": 21,
+          "spent": 32.24913200000159,
+          "mix": {
+            "cheap": 1507,
+            "mid": 345,
+            "expert": 148
+          },
+          "degraded": 0
+        },
+        {
+          "day": 22,
+          "spent": 33.77987440000168,
+          "mix": {
+            "cheap": 1506,
+            "mid": 347,
+            "expert": 147
+          },
+          "degraded": 0
+        },
+        {
+          "day": 23,
+          "spent": 35.331807200001755,
+          "mix": {
+            "cheap": 1496,
+            "mid": 356,
+            "expert": 148
+          },
+          "degraded": 0
+        },
+        {
+          "day": 24,
+          "spent": 36.79362720000199,
+          "mix": {
+            "cheap": 1521,
+            "mid": 346,
+            "expert": 133
+          },
+          "degraded": 0
+        },
+        {
+          "day": 25,
+          "spent": 38.356393600002086,
+          "mix": {
+            "cheap": 1494,
+            "mid": 355,
+            "expert": 151
+          },
+          "degraded": 0
+        },
+        {
+          "day": 26,
+          "spent": 39.87588800000219,
+          "mix": {
+            "cheap": 1518,
+            "mid": 328,
+            "expert": 154
+          },
+          "degraded": 0
+        },
+        {
+          "day": 27,
+          "spent": 41.44317120000216,
+          "mix": {
+            "cheap": 1488,
+            "mid": 360,
+            "expert": 152
+          },
+          "degraded": 0
+        },
+        {
+          "day": 28,
+          "spent": 43.08923760000223,
+          "mix": {
+            "cheap": 1475,
+            "mid": 359,
+            "expert": 166
+          },
+          "degraded": 0
+        },
+        {
+          "day": 29,
+          "spent": 44.58747840000241,
+          "mix": {
+            "cheap": 1511,
+            "mid": 351,
+            "expert": 138
+          },
+          "degraded": 0
+        },
+        {
+          "day": 30,
+          "spent": 46.06093920000263,
+          "mix": {
+            "cheap": 1504,
+            "mid": 366,
+            "expert": 130
+          },
+          "degraded": 0
+        }
+      ]
+    }
+  }
+}
