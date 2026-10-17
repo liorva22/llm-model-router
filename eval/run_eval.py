@@ -94,9 +94,10 @@ def main():
     llm = make_llm(cfg["mock"])
     queries, labels = load_dataset(ROOT / "data" / "queries.jsonl")
     if args.limit:
-        idx = sorted(random.Random(0).sample(range(len(queries)), args.limit))
-        # keep every hard/medium example; trim easy ones
-        idx = sorted({i for i, lbl in enumerate(labels) if lbl != "easy"} | set(idx))[: max(args.limit, 50)]
+        # keep every hard/medium example; fill the rest with a seeded sample of easy ones
+        rest = [i for i, lbl in enumerate(labels) if lbl != "easy"]
+        easy = [i for i, lbl in enumerate(labels) if lbl == "easy"]
+        idx = sorted(rest + random.Random(0).sample(easy, max(0, args.limit - len(rest))))
         queries, labels = [queries[i] for i in idx], [labels[i] for i in idx]
     print(f"mode={'MOCK' if cfg['mock'] else 'LIVE'} n={len(queries)}")
 
