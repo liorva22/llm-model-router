@@ -17,14 +17,13 @@ See the diagram in the README. Requests reach a FastAPI gateway. A logistic-regr
 - **Config-driven model IDs and prices, and a provider protocol** (`complete(tier, prompt)`), so OpenAI or a local model is one class away.
 
 ## What I'd do differently
-- **Real labels from real traffic.** I wrote and labeled the 200 queries myself, as a single annotator. Production would label sampled traffic using outcome signals (thumbs-down, escalation, regenerate) and track inter-annotator agreement.
-- **Live quality numbers.** This run was mock-only because no API key was available. The `--limit 60` live path grades routed answers against Opus answers. Its results belong next to the mock numbers before anyone trusts the cost/quality claim.
+- **Label quality, not routing, is the ceiling.** In the live run ($6.90), the classifier hit 93% tier accuracy, yet only 75% of routed answers were rated as good as Opus's; even label-perfect routing topped out at 77%. The 200 labels were written by an AI assistant during the build. I'd label sampled traffic by outcome (does the cheaper answer actually match?) and use a blind, order-randomized grader.
 - **Cascade, not just pre-routing.** Send the request to the cheap model first, and escalate when its self-check or a verifier fails. This costs latency on hard queries in exchange for robustness to misclassification.
-- **Per-tenant budgets** and a hard-stop option. Also price lookup by the model that actually answered (refusal fallbacks can switch models).
-- **Calibrated thresholds** chosen by cost-weighted optimization on a validation set instead of by hand.
+- **Per-tenant budgets**, a hard-stop option, and pricing by the model that actually answered.
+- **Calibrated thresholds** from cost-weighted optimization, not by hand.
 
 ## Interview talking points
 - Why under-routing and over-routing are asymmetric errors, and how that shaped the thresholds.
 - Why the reported accuracy is out-of-fold, and why that matters on a 200-row dataset.
 - Exactly-once alerting using a database constraint instead of a distributed lock.
-- What I refused to measure in mock mode (answer quality) and how the live path measures it.
+- Why 93% tier accuracy still meant only 75% quality retention.

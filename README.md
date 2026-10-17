@@ -61,8 +61,23 @@ All numbers come from `MOCK_MODE=1 python eval/run_eval.py` (full output in [`re
 **What these numbers are and aren't.**
 - *Under-routed* (the routed tier is weaker than the labeled tier) is the quality proxy. It measures routing correctness, not answer quality.
 - Dollar figures use real list prices multiplied by **mock token counts**. They show the price structure, not a real bill.
-- The 200 queries were written and labeled by me, as a single annotator.
-- Real answer-quality retention needs an API key: `python eval/run_eval.py --limit 60` grades each routed answer against Opus's answer with a Sonnet judge, and runs the LLM-judge difficulty baseline. It hasn't been run yet (no API key was available).
+- The 200 queries and their difficulty labels were written during the build by an AI coding assistant (Claude), not by independent annotators.
+
+### Live run: does the routed answer serve the user as well as Opus's?
+
+`MOCK_MODE=0 python eval/run_eval.py --limit 60` → [`results/eval_results_live.json`](results/eval_results_live.json), [`results/summary_live.md`](results/summary_live.md). The subsample keeps **all 50 medium and hard queries plus 10 easy ones**, so its tier mix is much harder than the full set's. Every strategy's answers were generated live, and a Sonnet grader judged whether each non-Opus answer served the user as well as Opus's answer to the same query. Real API spend: **$6.90**.
+
+| Strategy | Cheap / Mid / Expert | Tier accuracy | Under-routed | Cost vs always-expert | **Quality retained** |
+|---|---|---|---|---|---|
+| always_cheap | 100% / 0% / 0% | 16.7% | 83.3% | 1.3% | 50.0% |
+| always_expert | 0% / 0% / 100% | 25.0% | 0.0% | 100.0% | 100.0% (by definition) |
+| heuristic | 65% / 25% / 10% | 36.7% | 63.3% | 38.1% | 63.3% |
+| **classifier** (5-fold out-of-fold on the 60) | 13% / 65% / 22% | **93.3%** | 3.3% | **67.3%** | **75.0%** |
+| LLM-judge difficulty estimate (Haiku) | 17% / 58% / 25% | 100.0% | 0.0% | 70.9% | 76.7% |
+
+- **Routing to the labeled tier isn't the same as matching Opus.** The LLM-judge baseline agreed with every difficulty label, yet only 76.7% of its answers were rated as good as Opus's. The bottleneck is the labels' idea of "good enough", not the classifier. The classifier gets within 2 points of that ceiling at 67% of the always-Opus cost on this hard-skewed mix.
+- **The heuristic baseline collapses on hard traffic:** 63% under-routed and 63% quality retained.
+- **Caveats.** n = 60, one run. The grader is told that answer B comes from "a stronger model", which likely biases it toward "no". Answers of Opus routed to Opus count as retained by definition. The query labels and the LLM-judge baseline both come from Claude, so their 100% agreement is weak evidence. A blind, order-randomized pairwise grader is the next step.
 
 ## Tech stack
 
